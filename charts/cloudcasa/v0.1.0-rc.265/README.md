@@ -3,7 +3,7 @@ Cloudcasa is one of the most versatile SaaS solution to manage backups for your 
 
 ## Introduction
 
-This chart bootstraps a kubeagent deployment on a client Kuberntes [Kubernetes](http://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager. This inturn registers the client Kubernetes cluster with Cloudcasa
+This chart bootstraps a kubeagent deployment on a client Kuberntes [Kubernetes](http://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager. This inturns registers the client Kubernetes cluster with Cloudcasa.
 
 ## Prerequisites
 
@@ -12,7 +12,7 @@ This chart bootstraps a kubeagent deployment on a client Kuberntes [Kubernetes](
 
 ## Helm Chart installation modes
 
-- CLI based installation
+### CLI based installation
 ##### Update the value of AMDS_CLUSTER_ID in the values.yaml file.
 
 ```bash
@@ -21,11 +21,11 @@ This chart bootstraps a kubeagent deployment on a client Kuberntes [Kubernetes](
 3. Create a values.yaml with entry AMDS_CLUTSER_ID: <Cluster ID>
 4. helm install <release name> cloudcasa-repo/cloudcasa-kubeagent -f values.yaml
 ```
-- Helmchart hosted on Rancher Apps
+### Helmchart hosted on Rancher Apps
 
 ```
 1. Register the cloudcasa helm chart repo in the Rancher Apps Repository.
-2. Go to charts select the repo -> Cloudcasa-app chart.
+2. Go to charts select the repo -> cloudcasa-kubeagent chart.
 3. Provide the name of release. 
 4. In cloudcasa setting section, provide the AMDS_CLUSTER_ID.
 5. Click on Install button.
