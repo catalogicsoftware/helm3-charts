@@ -1,28 +1,42 @@
-# Cloudcasa
-Cloudcasa is one of the most versatile SaaS solution to manage backups for your Kubernetes/Docker containers and Volumes.
+# CloudCasa Kubernetes Agent
 
 ## Introduction
 
-This chart bootstraps a kubeagent deployment on a client Kuberntes [Kubernetes](http://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager. This inturns registers the client Kubernetes cluster with Cloudcasa.
+[CloudCasa](https://cloudcasa.io) is a class-leading SaaS solution providing data protection services for Kubernetes and cloud native applications.
+
+This chart installs and configures the CloudCasa agent on a [Kubernetes](http://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 ## Prerequisites
 
 - Kubernetes 1.16+
 - Helm 2.11+ or Helm 3.0+
 
-## Helm Chart installation modes
+## Helm installation methods
 
-### CLI based installation
+### Installation using Rancher Apps Repository
 
-```bash
-1. helm repo add cloudcasa-repo https://catalogicsoftware.github.io/cloudcasa-helmchart
-2. helm install cloudcasa.io cloudcasa-repo/cloudcasa-helmchart --set AMDS_CLUSTER_ID=<Cluster ID>
+1. Log in to https://home.cloudcasa.io and add your Kubernetes cluster under the Setup tab. Note the cluster ID.
+2. Log in to the Rancher UI and go to charts and select the repo -> Cloudcasa-kubeagent chart.
+3. Provide the release/app name.
+4. In the cloudcasa settings section, enter the AMDS_CLUSTER_ID provided by CloudCasa in step 1.
+5. Click on the Install button
+
+### Installation via Helm CLI
+
+1. Log in to https://home.cloudcasa.io and add your Kubernetes cluster under the Setup tab. Note the cluster ID.
+2. Execute the following helm commands:
 ```
-### Helmchart hosted on Rancher Apps
+  helm repo add cloudcasa-repo https://catalogicsoftware.github.io/cloudcasa-helmchart
+  helm install cloudcasa.io cloudcasa-repo/cloudcasa-helmchart --set AMDS_CLUSTER_ID=<Cluster ID>
+```
+
+## Uninstalling via Helm CLI
+
+To uninstall/delete the `cloudcasa.io` deployment:
 
 ```
-1. Go to charts, select the repo -> cloudcasa-kubeagent chart.
-2. Provide the name of teh app.
-3. In cloudcasa setting section, provide the AMDS_CLUSTER_ID.
-4. Click on Install button.
+  helm delete cloudcasa.io
 ```
+
+*CloudCasa is a trademark of Catalogic Software Inc.*
+
