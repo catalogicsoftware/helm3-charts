@@ -13,17 +13,16 @@ This chart bootstraps a kubeagent deployment on a client Kuberntes [Kubernetes](
 ## Helm Chart installation modes
 
 ### CLI based installation
-##### Update the value of AMDS_CLUSTER_ID in the values.yaml file.
 
 ```bash
 1. helm repo add cloudcasa-repo https://catalogicsoftware.github.io/cloudcasa-helmchart
-2. helm install <Chart Object Name> cloudcasa-repo/cloudcasa-helmchart --set AMDS_CLUSTER_ID=<Cluster ID>
+2. helm install cloudcasa.io cloudcasa-repo/cloudcasa-helmchart --set AMDS_CLUSTER_ID=<Cluster ID>
 ```
 ### Helmchart hosted on Rancher Apps
 
 ```
 1. Go to charts, select the repo -> cloudcasa-kubeagent chart.
-2. Provide the name of release.
+2. Provide the name of teh app.
 3. In cloudcasa setting section, provide the AMDS_CLUSTER_ID.
 4. Click on Install button.
 ```
