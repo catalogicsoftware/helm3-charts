@@ -8,7 +8,7 @@ This chart bootstraps a kube-agent deployment on a client Kuberntes [Kubernetes]
 ## Installation
 ```
 1. Navigate to charts select the repo -> Cloudcasa chart.
-2. Provide the name of release.
+2. Provide the name of ap.
 3. In cloudcasa configuration section, provide the AMDS_CLSTER_ID.
 4. Click on Install button
 ```
