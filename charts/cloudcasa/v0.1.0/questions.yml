@@ -5,10 +5,10 @@ labels:
 categories:
 - Application
 questions:
-- variable: AMDS_CLUSTER_ID
+- variable: cluster_id
   default: ""
   description: "Cloudcasa Cluster ID"
   type: string
   required: true
-  label: AMDS_CLUSTER_ID
+  label: CLUSTER_ID
   group: "Cloudcasa Configuration"
