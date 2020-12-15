@@ -16,12 +16,10 @@ This chart installs and configures the CloudCasa agent on a [Kubernetes](http://
 1. Log in to https://home.cloudcasa.io and add your Kubernetes cluster under the Setup tab. Note the cluster ID.
 2. Log in to the Rancher UI and go to charts and select the repo -> Cloudcasa-kubeagent chart.
 3. Provide the release/app name.
-4. In the cloudcasa settings section, enter the AMDS_CLUSTER_ID provided by CloudCasa in step 1.
+4. In the cloudcasa settings section, enter the CLUSTER_ID provided by CloudCasa in step 1.
 5. Click on the Install button
 
 ## Uninstall
 App delete option is available in the Installed App section.
 
-
 *CloudCasa is a trademark of Catalogic Software Inc.*
-
