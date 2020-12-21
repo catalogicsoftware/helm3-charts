@@ -10,5 +10,5 @@ questions:
   description: "Cloudcasa Cluster ID"
   type: string
   required: true
-  label: CLUSTER_ID
+  label: CLUSTER ID
   group: "Cloudcasa Configuration"
