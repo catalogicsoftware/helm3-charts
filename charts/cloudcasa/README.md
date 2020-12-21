@@ -21,7 +21,7 @@ See the CloudCasa [Getting Started Guide](https://cloudcasa.io/get-started) for 
 1. Log in to https://home.cloudcasa.io and add your Kubernetes cluster under the Setup tab. Note the returned cluster ID.
 2. Go to charts. In the Deploy Chart section, check the Partners checkbox and click on the cloudcasa-kubeagent chart.
 3. Provide the App Name.
-4. In the cloudcasa settings section, provide the Obtained Cluster ID.
+4. In the CloudCasa settings section, provide the Obtained Cluster ID.
 5. Click on the Install button.
 
 ### Helmchart CLI Installation
