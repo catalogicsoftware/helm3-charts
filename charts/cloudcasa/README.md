@@ -17,12 +17,10 @@ This chart installs and configures the CloudCasa agent on a [Kubernetes](http://
 
 ### Helmchart hosted on Rancher Apps
 
-```
 1. Go to charts, select the repo -> cloudcasa-kubeagent chart.
 2. Provide the name of the app.
 3. In cloudcasa setting section, provide the Cluster ID.
 4. Click on Install button.
-```
 
 ### Helmchart CLI Installation
 
