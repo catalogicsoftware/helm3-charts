@@ -7,8 +7,8 @@ categories:
 questions:
 - variable: cluster_id
   default: ""
-  description: "Cloudcasa Cluster ID"
+  description: "CloudCasa Cluster ID"
   type: string
   required: true
   label: CLUSTER ID
-  group: "Cloudcasa Configuration"
+  group: "CloudCasa Configuration"
