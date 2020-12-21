@@ -1,7 +1,7 @@
 apiVersion: v2
 name: cloudcasa-kubeagent
-version: 0.1.0-rc.265
-appVersion: 0.1.0-rc.265
+version: 0.1.0
+appVersion: 0.1.0
 description: Register a client Kubernetes cluster to cloudcasa by running a kubeagent on Client cluster. 
 type: application
 maintainers:
