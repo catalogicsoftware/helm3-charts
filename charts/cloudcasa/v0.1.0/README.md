@@ -5,7 +5,9 @@
 # Introduction
 
 CloudCasa is a SaaS solution that provides class-leading data protection services for Kubernetes and cloud native applications.
-This chart installs and configures the CloudCasa agent on a [Kubernetes](http://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
+Configuration is quick and easy, and basic service is free.
+
+This Helm chart installs and configures the CloudCasa agent on a Kubernetes cluster.
 See the CloudCasa [Getting Started Guide](https://cloudcasa.io/get-started) for more information.
 
 ## Prerequisites
@@ -33,7 +35,7 @@ $ helm install cloudcasa.io cloudcasa-repo/cloudcasa-helmchart --set cluster_id=
 ```
 This will install the CloudCasa agent and complete registration of the cluster with the CloudCasa service.
 
-## Update the CloudCasa Agent
+## Updating the CloudCasa Agent
 1. Log in to https://home.cloudcasa.io and obtain the cluster ID for your cluster by selecting it under the Setup tab.
 2. Execute the following commands to update the agent:
 ```
@@ -41,7 +43,7 @@ $ helm repo update
 $ helm upgrade cloudcasa.io cloudcasa-repo/cloudcasa-helmchart --set cluster_id=<Cluster ID>
 ```
 
-## Uninstall the CloudCasa Agent
+## Uninstalling the CloudCasa Agent
 ```
 $ helm uninstall cloudcasa.io
 ```
