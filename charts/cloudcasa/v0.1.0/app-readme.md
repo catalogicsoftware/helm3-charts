@@ -11,7 +11,7 @@ See the CloudCasa [Getting Started Guide](https://cloudcasa.io/get-started) for 
 
 ## Prerequisites
 
-- Kubernetes 1.16+
+- Kubernetes 1.17+ for CSI snapshot support
 - Helm 2.11+ or Helm 3.0+
 
 ## Installation
