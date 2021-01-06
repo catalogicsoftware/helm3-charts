@@ -1,9 +1,11 @@
 apiVersion: v2
-name: cloudcasa-kubeagent
+name: cloudcasa
 version: 0.1.0
 appVersion: 0.1.0
-description: Register a client Kubernetes cluster to cloudcasa by running a kubeagent on Client cluster. 
+description: CloudCasa backup service for Kubernetes and cloud native apps
+home: https://cloudcasa.io
+icon: file://../logo.png
 type: application
 maintainers:
-  - name: Catalogicsoftware
-    email: ""
+  - name: catalogic
+    email: info@catalogicsoftware.com
